@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420" role="img">
+  <defs>
+    <linearGradient id="storyGrad-glossier" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF006E"/>
+      <stop offset="50%" stop-color="#FF8C00"/>
+      <stop offset="100%" stop-color="#FF006E"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="720" height="420" rx="12" fill="#F1F5F9"/>
+  <rect x="48" y="28" width="152" height="28" rx="14" fill="#FFE8F1" stroke="#FF006E" stroke-width="1.5"/>
+  <text x="62" y="47" fill="#FF006E" font-size="11" font-weight="700" font-family="system-ui,sans-serif">Expanded PDP gallery</text>
+  <g filter="url(#cardShadow)">
+    <rect x="48" y="72" width="624" height="288" rx="16" fill="#ffffff"/>
+    <g opacity="0.9">
+    <circle cx="66" cy="94" r="5" fill="#FEAFC8"/>
+    <text x="78" y="98" fill="#64748B" font-size="10" font-family="system-ui,sans-serif">Glossier</text>
+  </g>
+    
+    <rect x="190" y="144" width="220" height="168" rx="10" fill="#F1F5F9" stroke="#E2E8F0"/>
+    <text x="300" y="234" text-anchor="middle" fill="#94A3B8" font-size="12" font-family="system-ui,sans-serif">Main image</text>
+    <rect x="426" y="252" width="72" height="72" rx="8" fill="#E2E8F0"/>
+    <rect x="426" y="168" width="72" height="72" rx="8" fill="#FCE7F3"/>
+    <rect x="510" y="168" width="72" height="72" rx="8" fill="#E2E8F0"/>
+    <rect x="510" y="252" width="72" height="72" rx="8" fill="#FDF2F8"/>
+    <text x="462" y="340" text-anchor="middle" fill="#64748B" font-size="9" font-family="system-ui,sans-serif">On model</text>
+    <text x="546" y="340" text-anchor="middle" fill="#64748B" font-size="9" font-family="system-ui,sans-serif">Lifestyle</text>
+  </g>
+  <text x="360" y="402" text-anchor="middle" fill="#64748B" font-size="11" font-family="system-ui,sans-serif">More lifestyle angles and on-model shots per SKU</text>
+</svg>

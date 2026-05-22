@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="420" viewBox="0 0 720 420" role="img">
+  <defs>
+    <linearGradient id="storyGrad-gymshark" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FF006E"/>
+      <stop offset="50%" stop-color="#FF8C00"/>
+      <stop offset="100%" stop-color="#FF006E"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-8%" y="-8%" width="116%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#0f172a" flood-opacity="0.08"/>
+    </filter>
+  </defs>
+  <rect width="720" height="420" rx="12" fill="#F1F5F9"/>
+  <rect x="48" y="28" width="170.6" height="28" rx="14" fill="#FFE8F1" stroke="#FF006E" stroke-width="1.5"/>
+  <text x="62" y="47" fill="#FF006E" font-size="11" font-weight="700" font-family="system-ui,sans-serif">Virtual try-on &amp; sizing</text>
+  <g filter="url(#cardShadow)">
+    <rect x="48" y="72" width="624" height="288" rx="16" fill="#ffffff"/>
+    <g opacity="0.9">
+    <circle cx="66" cy="94" r="5" fill="#000000"/>
+    <text x="78" y="98" fill="#64748B" font-size="10" font-family="system-ui,sans-serif">Gymshark</text>
+  </g>
+    
+    <text x="360" y="136" text-anchor="middle" fill="#0F172A" font-size="13" font-weight="700" font-family="system-ui,sans-serif">See it on you</text>
+    <rect x="128" y="156" width="464" height="120" rx="12" fill="#F8FAFC" stroke="#CBD5E1" stroke-width="1.5" stroke-dasharray="8 5"/>
+    <circle cx="360" cy="214" r="28" fill="#E2E8F0"/>
+    <text x="360" y="220" text-anchor="middle" fill="#64748B" font-size="11" font-family="system-ui,sans-serif">+ Upload photo</text>
+    <text x="128" y="298" fill="#0F172A" font-size="12" font-weight="600" font-family="system-ui,sans-serif">Find your size</text>
+    <rect x="128" y="308" width="464" height="40" rx="8" fill="#F1F5F9" stroke="#E2E8F0"/>
+    <text x="142" y="334" fill="#94A3B8" font-size="10" font-family="system-ui,sans-serif">Height · weight · usual size</text>
+    <rect x="128" y="358" width="464" height="40" rx="8" fill="#0F172A"/>
+    <text x="360" y="384" text-anchor="middle" fill="#ffffff" font-size="11" font-weight="700" font-family="system-ui,sans-serif">Complete the look</text>
+  </g>
+  <text x="360" y="402" text-anchor="middle" fill="#64748B" font-size="11" font-family="system-ui,sans-serif">Shoppers upload a photo and get size guidance on PDP</text>
+</svg>
