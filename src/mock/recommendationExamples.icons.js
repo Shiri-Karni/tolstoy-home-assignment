@@ -1,9 +1,9 @@
 /**
- * Default example images when a recommendation has no dedicated SVG mapping.
- * Used as fallback in getExampleImageForRecommendation().
+ * Fallback example images when a recommendation has no dedicated asset mapping.
+ * Uses representative photos from recommendations-generated/.
  */
 export const EXAMPLE_IMAGE_BY_ICON = {
-  video: '/examples/recommendations/gymshark-pdp-stories.svg',
-  growth: '/examples/recommendations/glossier-ai-studio.svg',
-  users: '/examples/recommendations/gymshark-ai-shopper.svg',
+  video: '/examples/recommendations-generated/gymshark-pdp-stories.png',
+  growth: '/examples/recommendations-generated/glossier-ai-studio.jpeg',
+  users: '/examples/recommendations-generated/gymshark-ai-shopper.png',
 }

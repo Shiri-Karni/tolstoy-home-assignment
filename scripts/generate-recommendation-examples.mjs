@@ -358,33 +358,8 @@ for (const [id, svg] of Object.entries(examples)) {
   fs.writeFileSync(path.join(outDir, `${id}.svg`), svg.trim())
 }
 
-const mapEntries = Object.keys(examples)
-  .map((id) => `  '${id}': '/examples/recommendations/${id}.svg',`)
-  .join('\n')
+// Example images for the app use JPEG/PNG in public/examples/recommendations-generated/.
+// Paths are configured in src/mock/recommendationExamples.js (not overwritten here).
 
-fs.writeFileSync(
-  path.join(__dirname, '..', 'src', 'mock', 'recommendationExamples.js'),
-  `/**
- * Maps recommendation IDs to example preview images. Auto-generated — do not edit.
- * Regenerate: node scripts/generate-recommendation-examples.mjs
- */
-import { EXAMPLE_IMAGE_BY_ICON } from './recommendationExamples.icons.js'
-
-export { EXAMPLE_IMAGE_BY_ICON }
-
-/** Paths to SVG mockups keyed by recommendation.id from storeAudits.js */
-export const EXAMPLE_IMAGE_BY_RECOMMENDATION_ID = {
-${mapEntries}
-}
-
-/** Resolves the lightbox image for a recommendation (by id, then icon fallback). */
-export function getExampleImageForRecommendation(recommendation) {
-  if (recommendation?.id && EXAMPLE_IMAGE_BY_RECOMMENDATION_ID[recommendation.id]) {
-    return EXAMPLE_IMAGE_BY_RECOMMENDATION_ID[recommendation.id]
-  }
-  return EXAMPLE_IMAGE_BY_ICON[recommendation?.icon] ?? EXAMPLE_IMAGE_BY_ICON.video
-}
-`,
-)
-
-console.log(`Generated ${Object.keys(examples).length} feature showcase SVGs`)
+console.log(`Generated ${Object.keys(examples).length} SVG placeholders in public/examples/recommendations/`)
+console.log('Lightbox images: edit src/mock/recommendationExamples.js to point at recommendations-generated/.')

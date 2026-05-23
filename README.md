@@ -48,7 +48,8 @@ npm run preview  # preview production build
 ```
 public/
   tolstoy-icon.svg, globe-icon.svg, upload-icon.svg
-  examples/recommendations/*.svg   # Feature preview mockups (21 files)
+  examples/recommendations-generated/   # Lightbox photos (JPEG/PNG, one per recommendation id)
+  examples/recommendations/*.svg        # Legacy SVG placeholders (optional)
 
 scripts/
   generate-recommendation-examples.mjs   # Regenerates SVGs + recommendationExamples.js
@@ -87,7 +88,7 @@ src/
 node scripts/generate-recommendation-examples.mjs
 ```
 
-Updates `public/examples/recommendations/` and `src/mock/recommendationExamples.js`.
+Updates `public/examples/recommendations/` only. Lightbox paths are in `src/mock/recommendationExamples.js` and should reference `recommendations-generated/`.
 
 ## Design notes
 

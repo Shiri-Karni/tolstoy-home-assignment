@@ -1,34 +1,55 @@
 /**
- * Maps recommendation IDs to example preview images. Auto-generated — do not edit.
- * Regenerate: node scripts/generate-recommendation-examples.mjs
+ * Maps recommendation IDs to example preview images for the "See an example" lightbox.
+ * Assets live under public/examples/recommendations-generated/.
  */
 import { EXAMPLE_IMAGE_BY_ICON } from './recommendationExamples.icons.js'
 
 export { EXAMPLE_IMAGE_BY_ICON }
 
-/** Paths to SVG mockups keyed by recommendation.id from storeAudits.js */
+/** Paths keyed by recommendation.id from storeAudits.js */
 export const EXAMPLE_IMAGE_BY_RECOMMENDATION_ID = {
-  'gymshark-pdp-stories': '/examples/recommendations/gymshark-pdp-stories.svg',
-  'gymshark-ai-shopper': '/examples/recommendations/gymshark-ai-shopper.svg',
-  'gymshark-homepage-feed': '/examples/recommendations/gymshark-homepage-feed.svg',
-  'glossier-ugc-stories': '/examples/recommendations/glossier-ugc-stories.svg',
-  'glossier-top-questions': '/examples/recommendations/glossier-top-questions.svg',
-  'glossier-ai-studio': '/examples/recommendations/glossier-ai-studio.svg',
-  'kith-homepage-feed': '/examples/recommendations/kith-homepage-feed.svg',
-  'kith-interactive-drops': '/examples/recommendations/kith-interactive-drops.svg',
-  'kith-collection-stories': '/examples/recommendations/kith-collection-stories.svg',
-  'our-place-interactive-founder': '/examples/recommendations/our-place-interactive-founder.svg',
-  'our-place-pdp-howto': '/examples/recommendations/our-place-pdp-howto.svg',
-  'our-place-ai-studio': '/examples/recommendations/our-place-ai-studio.svg',
-  'away-pdp-feature-video': '/examples/recommendations/away-pdp-feature-video.svg',
-  'away-ai-shopper-compare': '/examples/recommendations/away-ai-shopper-compare.svg',
-  'away-interactive-faq': '/examples/recommendations/away-interactive-faq.svg',
-  'general-pdp-stories': '/examples/recommendations/general-pdp-stories.svg',
-  'general-ai-shopper': '/examples/recommendations/general-ai-shopper.svg',
-  'general-homepage-feed': '/examples/recommendations/general-homepage-feed.svg',
-  'photos-pdp-stories': '/examples/recommendations/photos-pdp-stories.svg',
-  'photos-ai-studio': '/examples/recommendations/photos-ai-studio.svg',
-  'photos-interactive': '/examples/recommendations/photos-interactive.svg',
+  'gymshark-pdp-stories':
+    '/examples/recommendations-generated/gymshark-pdp-stories.png',
+  'gymshark-ai-shopper':
+    '/examples/recommendations-generated/gymshark-ai-shopper.png',
+  'gymshark-homepage-feed':
+    '/examples/recommendations-generated/gymshark-homepage-feed.png',
+  'glossier-ugc-stories':
+    '/examples/recommendations-generated/glossier-ugc-stories.jpeg',
+  'glossier-top-questions':
+    '/examples/recommendations-generated/glossier-top-questions.jpeg',
+  'glossier-ai-studio':
+    '/examples/recommendations-generated/glossier-ai-studio.jpeg',
+  'kith-homepage-feed':
+    '/examples/recommendations-generated/kith-homepage-feed.jpeg',
+  'kith-interactive-drops':
+    '/examples/recommendations-generated/kith-interactive-drops.jpeg',
+  'kith-collection-stories':
+    '/examples/recommendations-generated/kith-collection-stories.jpeg',
+  'our-place-interactive-founder':
+    '/examples/recommendations-generated/our-place-interactive-founder.jpeg',
+  'our-place-pdp-howto':
+    '/examples/recommendations-generated/our-place-pdp-howto.jpeg',
+  'our-place-ai-studio':
+    '/examples/recommendations-generated/our-place-ai-studio.jpeg',
+  'away-pdp-feature-video':
+    '/examples/recommendations-generated/away-pdp-feature-video.jpeg',
+  'away-ai-shopper-compare':
+    '/examples/recommendations-generated/away-ai-shopper-compare.jpeg',
+  'away-interactive-faq':
+    '/examples/recommendations-generated/away-interactive-faq.jpeg',
+  'general-pdp-stories':
+    '/examples/recommendations-generated/general-pdp-stories.jpeg',
+  'general-ai-shopper':
+    '/examples/recommendations-generated/general-ai-shopper.jpeg',
+  'general-homepage-feed':
+    '/examples/recommendations-generated/general-homepage-feed.jpeg',
+  'photos-pdp-stories':
+    '/examples/recommendations-generated/photos-pdp-stories.jpeg',
+  'photos-ai-studio':
+    '/examples/recommendations-generated/photos-ai-studio.jpeg',
+  'photos-interactive':
+    '/examples/recommendations-generated/photos-interactive.jpeg',
 }
 
 /** Resolves the lightbox image for a recommendation (by id, then icon fallback). */
