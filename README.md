@@ -20,14 +20,20 @@ npm run preview  # preview production build
 
 ## User flows
 
+Enter a store URL or upload screenshots on **Enter URL**, then follow the loading screen to the outcome below.
 
-| Flow                  | How to trigger                                                  | Result                                          |
-| --------------------- | --------------------------------------------------------------- | ----------------------------------------------- |
-| **Named demo store**  | Enter URL matching a known brand (e.g. `gymshark.com`)          | Tailored audit for that brand                   |
-| **Unknown URL**       | Any other valid domain                                          | General recommendations; `storeName` = hostname |
-| **Screenshot upload** | Drag/drop images on Enter URL (no URL)                          | `generalFromPhotos` audit                       |
-| **Insufficient data** | `blanksite.com`                                                 | Missing data page → retry or upload-directly    |
-| **Upload directly**   | Missing data → “Upload Content Directly”, or `/upload-directly` | 5-step questionnaire → general recommendations  |
+
+| Store / URL                                        | Flow              | Result                                                        |
+| -------------------------------------------------- | ----------------- | ------------------------------------------------------------- |
+| **Gymshark** · `gymshark.com`                      | Named demo store  | Tailored activewear & fitness audit → `/feedback`             |
+| **Glossier** · `glossier.com`                      | Named demo store  | Tailored beauty & skincare audit → `/feedback`                |
+| **Kith** · `kith.com`                              | Named demo store  | Tailored streetwear & lifestyle audit → `/feedback`           |
+| **Our Place** · `fromourplace.com`, `ourplace.com` | Named demo store  | Tailored home & cookware audit → `/feedback`                  |
+| **Away** · `awaytravel.com`, `away.com`            | Named demo store  | Tailored travel & accessories audit → `/feedback`             |
+| Any other valid domain                             | Unknown URL       | General recommendations; `storeName` = hostname → `/feedback` |
+| — (screenshots, no URL)                            | Screenshot upload | `generalFromPhotos` audit → `/feedback`                       |
+| `blanksite.com`                                    | Insufficient data | Missing data page → retry or upload-directly                  |
+| — (questionnaire)                                  | Upload directly   | 5-step form → general recommendations → `/feedback`           |
 
 
 ## Routes
@@ -69,30 +75,9 @@ src/
   utils/generateChatUrl.js           # Tolstoy platform deep links
 ```
 
-## Demo store URLs
-
-
-| Brand                     | Example domain     |
-| ------------------------- | ------------------ |
-| Gymshark                  | `gymshark.com`     |
-| Glossier                  | `glossier.com`     |
-| Kith                      | `kith.com`         |
-| Our Place                 | `fromourplace.com` |
-| Away                      | `awaytravel.com`   |
-| No content (missing data) | `blanksite.com`    |
-
-
-## Regenerating example images
-
-```bash
-node scripts/generate-recommendation-examples.mjs
-```
-
-Updates `public/examples/recommendations/` only. Lightbox paths are in `src/mock/recommendationExamples.js` and should reference `recommendations-generated/`.
-
 ## Design notes
 
-- Font: **Heebo** (loaded in `index.html`)
+- Font: **Heebo** (loaded in `index.html,`inspired by Tolstoy's font.)
 - Primary text: `#1D293D`, accent: `#FF006E`
-- Styles live in `src/index.css` (BEM-style class names per page)
+- Styles live in `src/index.css`
 
