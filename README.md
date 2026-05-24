@@ -83,5 +83,4 @@ src/
 
 ## Link to supporting presentation
 
-https://www.canva.com/design/DAHKfCgBE4s/noHA-i2sDvs7PIjTihe_wg/view
-
+https://canva.link/0wi93pbtz17pmd1
