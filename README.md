@@ -81,3 +81,7 @@ src/
 - Primary text: `#1D293D`, accent: `#FF006E`
 - Styles live in `src/index.css`
 
+## Link to supporting presentation
+
+https://www.canva.com/design/DAHKfCgBE4s/noHA-i2sDvs7PIjTihe_wg/view
+
