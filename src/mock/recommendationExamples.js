@@ -11,7 +11,7 @@ export const EXAMPLE_IMAGE_BY_RECOMMENDATION_ID = {
   'gymshark-pdp-stories':
     '/examples/recommendations-generated/gymshark-pdp-stories.png',
   'gymshark-ai-shopper':
-    '/examples/recommendations-generated/gymshark-ai-shopper.png',
+    '/examples/recommendations-generated/gymshark-ai-shopper.mp4',
   'gymshark-homepage-feed':
     '/examples/recommendations-generated/gymshark-homepage-feed.png',
   'glossier-ugc-stories':
@@ -50,6 +50,11 @@ export const EXAMPLE_IMAGE_BY_RECOMMENDATION_ID = {
     '/examples/recommendations-generated/photos-ai-studio.jpeg',
   'photos-interactive':
     '/examples/recommendations-generated/photos-interactive.jpeg',
+}
+
+/** True when the example asset is a video (e.g. .mp4) rather than an image. */
+export function isExampleVideo(src) {
+  return /\.(mp4|webm|mov)(\?.*)?$/i.test(src ?? '')
 }
 
 /** Resolves the lightbox image for a recommendation (by id, then icon fallback). */

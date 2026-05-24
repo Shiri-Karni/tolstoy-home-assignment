@@ -1,5 +1,6 @@
-/** Modal overlay for full-size recommendation example SVG previews. */
+/** Modal overlay for recommendation example previews (images or video). */
 import { useEffect } from 'react'
+import { isExampleVideo } from '../mock/recommendationExamples.js'
 
 export default function ExampleLightbox({
   imageSrc,
@@ -7,6 +8,8 @@ export default function ExampleLightbox({
   caption,
   onClose,
 }) {
+  const isVideo = isExampleVideo(imageSrc)
+
   useEffect(() => {
     function handleKeyDown(event) {
       if (event.key === 'Escape') onClose()
@@ -39,11 +42,23 @@ export default function ExampleLightbox({
         >
           ×
         </button>
-        <img
-          src={imageSrc}
-          alt={imageAlt}
-          className="example-lightbox-image"
-        />
+        {isVideo ? (
+          <video
+            src={imageSrc}
+            className="example-lightbox-video"
+            controls
+            playsInline
+            autoPlay
+            muted
+            aria-label={imageAlt}
+          />
+        ) : (
+          <img
+            src={imageSrc}
+            alt={imageAlt}
+            className="example-lightbox-image"
+          />
+        )}
         {caption && (
           <p className="example-lightbox-caption">{caption}</p>
         )}

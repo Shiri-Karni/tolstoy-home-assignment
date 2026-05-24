@@ -725,13 +725,18 @@ h3 {
   color: #1d293d;
 }
 
-.example-lightbox-image {
+.example-lightbox-image,
+.example-lightbox-video {
   display: block;
   width: 100%;
   height: auto;
   max-height: min(78vh, 420px);
   object-fit: contain;
   background-color: #f1f5f9;
+}
+
+.example-lightbox-video {
+  vertical-align: middle;
 }
 
 .example-lightbox-caption {
