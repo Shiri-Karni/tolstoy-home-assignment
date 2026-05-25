@@ -1,6 +1,6 @@
 # Tolstoy Home Assignment
 
-MVP demo for a PM interview: a shopper-facing flow that “analyzes” a store (or uploaded context) and returns three Tolstoy product recommendations (AI Player, AI Studio, AI Shopper, Interactive Video).
+MVP demo for a PM interview: a shopper-facing flow that “analyzes” a store (or uploaded context) and returns three Tolstoy product recommendations together with a visual example of the suggested feature and a built in prompt in order to create the recommended feature using Tolstoy's platform.
 
 Built with **React 19**, **Vite 6**, and **React Router 7**.
 
